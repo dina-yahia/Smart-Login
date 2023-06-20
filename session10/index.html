@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<section>
+    <div class="container my-5 text-center"id="in">
+        <div class="item w-75 p-5 m-auto">
+            <h1> Smart Login System</h1>
+            <input id="signInEmail"type="text"class="form-control my-3"placeholder="enter your email">
+            <input id="signInPass"type="password"class="form-control my-3"placeholder="enter your password">
+            <p id="incorrect" class="text-danger m-3 d-none">All inputs is required</p>
+            <p id="correct" class="text-success m-3 d-none">Success</p>
+            <button class="btn btn-outline-info w-100 my-3" onclick="fav()">Login</button>
+            <p class="text-white mb-3">Don’t have an account? <button id="anchorIn"href="" class="text-white btn">Sign Up</button></p>
+        </div>
+    </div>
+    <div class="container my-5 text-center d-none"id="up">
+        <div class="item w-75 p-5 m-auto">
+            <h1> Smart Login System</h1>
+            <input id="signUpName"type="text"class="form-control my-3"placeholder="enter your name">
+            <input id="signUpEmail"type="text"class="form-control my-3"placeholder="enter your email">
+            <input id="signUpPass"type="password"class="form-control my-3"placeholder="enter your password">
+            <p id="incorrect" class="text-danger m-3 d-none">All inputs is required</p>
+            <p id="correct" class="text-success m-3 d-none">Success</p>
+            <button class="btn btn-outline-info w-100 my-3"onclick="fa()">Sign Up</button>
+            <p class="text-white mb-3">You have an account? <a id="anchorUp"href="" class="text-white">Signin</a></p>
+        </div>
+    </div>
+    <div class=" home1 container my-5 text-center d-none"id="log">
+        <div class="item w-75 p-5 m-auto">
+            <div class="home"id="home">
+                <nav class="navbar navbar-expand">
+                 <div class="container">
+                    <button class="btn btn-outline-info w-100 my-3">log out</button>
+                 </div>
+                </nav>
+             </div>
+        </div>
+    </div>
+
+</section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
